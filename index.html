@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Calculator</h1>
+        <div class="calculator">
+            <input type="text" placeholder="0" id="input" disabled  >
+            <button class="del" onclick="deletebutton()">Del</button>
+
+
+            <table>
+                <tr>
+                    <td> <button onclick="operators('+')" class="special">+</button></td>
+                    <td> <button onclick="operators('-')"class="special">-</button></td>
+                    <td> <button onclick="operators('*')"class="special">x</button></td>
+                    <td> <button onclick="operators('/')"class="special">/</button></td>
+                </tr>
+                <tr>
+                    <td> <button onclick="number('7')"class="number">7</button></td>
+                    <td> <button onclick="number('8')"class="number">8</button></td>
+                    <td> <button onclick="number('9')"class="number">9</button></td>
+                    <td> <button onclick="calculate()" disabled="true" class="equal">=</button></td>
+                </tr>
+                <tr>
+                    <td> <button onclick="number('4')"class="number">4</button></td>
+                    <td> <button onclick="number('5')"class="number">5</button></td>
+                    <td> <button onclick="number('6')"class="number">6</button></td>
+                </tr>
+                <tr>
+                    <td> <button onclick="number('1')"class="number">1</button></td>
+                    <td> <button onclick="number('2')"class="number">2</button></td>
+                    <td> <button onclick="number('3')"class="number">3</button></td>
+                </tr>
+                <tr>
+                    <td> <button onclick="number('0')"class="number">0</button></td>
+                    <td> <button onclick="number('.')"class="number">.</button></td>
+                    <td> <button onclick="clearResult()" class="number" id="equal">C</button></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+
+    <script src="Megha.js"></script>
+
+</body>
+
+</html>
